@@ -5,4 +5,8 @@ class Team
     @city = city
     @roster = []
   end
+
+  def player_count
+    roster.size
+  end
 end
