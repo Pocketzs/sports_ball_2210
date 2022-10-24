@@ -9,4 +9,8 @@ class Team
   def player_count
     roster.size
   end
+
+  def add_player(player)
+    roster << player
+  end
 end
