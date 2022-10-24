@@ -25,4 +25,10 @@ class Team
       player.contract_length <=24
     end
   end
+
+  def total_value 
+    roster.reduce(0) do |sum, player| 
+      sum + player.total_cost 
+    end
+  end
 end
