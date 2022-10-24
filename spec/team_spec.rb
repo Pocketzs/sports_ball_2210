@@ -82,7 +82,7 @@ RSpec.describe Team do
       team.add_player(player_3)
       team.add_player(player_4)
 
-      expect(team.long_term_players).to eq([player_2, player_4])
+      expect(team.short_term_players).to eq([player_2, player_4])
     end
   end
 end
