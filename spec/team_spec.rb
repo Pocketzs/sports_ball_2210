@@ -20,5 +20,11 @@ RSpec.describe Team do
 
       expect(team.city).to eq("Los Angeles")
     end
+
+    it 'starts with an empty team roster' do
+      team = Team.new("Dodgers", "Los Angeles")
+
+      expect(team.roster).to eq([])
+    end
   end
 end
