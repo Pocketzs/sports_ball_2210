@@ -14,5 +14,11 @@ RSpec.describe Team do
 
       expect(team.name).to eq("Dodgers")
     end
+
+    it 'has a team city' do
+      team = Team.new("Dodgers", "Los Angeles")
+
+      expect(team.city).to eq("Los Angeles")
+    end
   end
 end
