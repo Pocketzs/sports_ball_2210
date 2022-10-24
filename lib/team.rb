@@ -38,4 +38,16 @@ class Team
     details["player_count"] = player_count
     details
   end
+
+  def average_cost_of_player
+    average = total_value / player_count
+    avg_string = average.to_s.chars
+    digit_order = avg_string.reverse
+    grouped_nest = digit_order.each_slice(3).to_a
+    grouped_arr = grouped_nest.map do |set|
+      set.join
+    end
+    formatted_cost = grouped_arr.join(",").reverse
+    "$#{formatted_cost}"
+  end
 end
