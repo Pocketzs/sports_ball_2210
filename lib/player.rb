@@ -17,4 +17,8 @@ class Player
   def total_cost
     monthly_cost * contract_length
   end
+
+  def nickname
+    
+  end
 end
