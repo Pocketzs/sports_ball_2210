@@ -19,6 +19,10 @@ class Player
   end
 
   def nickname
-    
+    @nickname
+  end
+
+  def set_nickname!(nickname)
+    @nickname = nickname
   end
 end
