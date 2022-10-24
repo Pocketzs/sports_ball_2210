@@ -50,4 +50,14 @@ class Team
     formatted_cost = grouped_arr.join(",").reverse
     "$#{formatted_cost}"
   end
+
+  def players_by_last_name
+    alpha_names = roster.sort_by do |player|
+      player.last_name.downcase
+    end
+    name_arr = alpha_names.map do |player|
+      player.last_name
+    end
+    name_arr.join(", ")
+  end
 end
