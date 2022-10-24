@@ -31,4 +31,11 @@ class Team
       sum + player.total_cost 
     end
   end
+
+  def details
+    details = Hash.new 
+    details["total_value"] = total_value
+    details["player_count"] = player_count
+    details
+  end
 end
