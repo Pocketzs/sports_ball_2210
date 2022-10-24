@@ -1,4 +1,5 @@
 class Player
+  attr_reader :monthly_cost, :contract_length
   def initialize(name, monthly_cost, contract_length)
     @name = name
     @monthly_cost = monthly_cost
@@ -13,7 +14,7 @@ class Player
       @name.split(' ')[1]
   end
 
-  def monthly_cost
-    @monthly_cost
+  def total_cost
+    monthly_cost * contract_length
   end
 end
